@@ -1,0 +1,214 @@
+[
+  {
+    "user_id": 1,
+    "firstname": "John",
+    "history": [
+      {
+        "date": "2025-02-02",
+        "mood_id": 1,
+        "initialMoods": ["Happy", "Satisfied"],
+        "detail": "Today I am happy and satisfied with my life, because I would able to do somethings"
+      },
+      {
+        "date": "2025-02-03",
+        "mood_id": 2,
+        "initialMoods": ["Hopeful"],
+        "detail": "Today I am Grateful for having somethings and hopeful about the future"
+      },
+      {
+        "date": "2025-02-05",
+        "mood_id": 3,
+        "initialMoods": ["Surprised", "Proud", "Grateful"],
+        "detail": "Today I have been realy surprised about something and I am proud of myself because I am feeling happy and satisfied"
+      },
+      {
+        "date": "2025-02-07",
+        "mood_id": 3,
+        "initialMoods": [],
+        "detail": "Felt unmotivated and tired the whole day."
+      },
+      {
+        "date": "2025-02-09",
+        "mood_id": 4,
+        "initialMoods": ["Happy", "Satisfied"],
+        "detail": "Had a stressful meeting at work."
+      },
+      {
+        "date": "2025-02-11",
+        "mood_id": 4,
+        "initialMoods": ["Happy", "Grateful"],
+        "detail": "Feeling exhausted from lack of sleep."
+      },
+      {
+        "date": "2025-02-13",
+        "mood_id": 5,
+        "initialMoods": [],
+        "detail": "A bit overwhelmed with pending tasks."
+      },
+      {
+        "date": "2025-02-15",
+        "mood_id": 4,
+        "initialMoods": ["Surprised", "Proud", "Grateful"],
+        "detail": "Didn't feel like doing anything today."
+      },
+      {
+        "date": "2025-02-17",
+        "mood_id": 3,
+        "initialMoods": [],
+        "detail": "feeling frustrated."
+      },      
+      {
+        "date": "2025-02-19",
+        "mood_id": 4,
+        "initialMoods": ["Happy", "Proud"],
+        "detail": "Missed a deadline and feeling frustrated."
+      },
+      {
+        "date": "2025-02-21",
+        "mood_id": 3,
+        "initialMoods": [],
+        "detail": "Feeling a bit under the weather today."
+      },
+      {
+        "date": "2025-02-23",
+        "mood_id": 2,
+        "initialMoods": [],
+        "detail": "Had a disagreement with a close friend."
+      },
+      {
+        "date": "2025-02-25",
+        "mood_id": 2,
+        "initialMoods": [],
+        "detail": "Woke up feeling anxious for no reason."
+      },
+      {
+        "date": "2025-02-26",
+        "mood_id": 2,
+        "initialMoods": [],
+        "detail": "Had a tough day dealing with personal responsibilities."
+      },
+      {
+        "date": "2025-02-27",
+        "mood_id": 4,
+        "initialMoods": ["Surprised", "Happy", "Grateful"],
+        "detail": "Just one of those days where nothing feels right."
+      },
+
+      {
+        "date": "2025-03-02",
+        "mood_id": 5,
+        "initialMoods": ["Happy", "Satisfied"],
+        "detail": "Today I am happy and satisfied with my life, because I would able to do somethings"
+      },
+      {
+        "date": "2025-03-04",
+        "mood_id": 4,
+        "initialMoods": ["Hopeful"],
+        "detail": "Today I am Grateful for having somethings and hopeful about the future"
+      },
+      {
+        "date": "2025-03-06",
+        "mood_id": 3,
+        "initialMoods": ["Surprised", "Proud", "Grateful"],
+        "detail": "Today I have been realy surprised about something and I am proud of myself because I am feeling happy and satisfied"
+      },
+      {
+        "date": "2025-03-08",
+        "mood_id": 2,
+        "initialMoods": [],
+        "detail": "Felt unmotivated and tired the whole day."
+      },
+      {
+        "date": "2025-03-10",
+        "mood_id": 1,
+        "initialMoods": [],
+        "detail": "Struggled with some personal issues today."
+      },
+      {
+        "date": "2025-03-12",
+        "mood_id": 2,
+        "initialMoods": [],
+        "detail": "Had a stressful meeting at work."
+      },
+      {
+        "date": "2025-03-14",
+        "mood_id": 2,
+        "initialMoods": [],
+        "detail": "Feeling exhausted from lack of sleep."
+      },
+      {
+        "date": "2025-03-16",
+        "mood_id": 3,
+        "initialMoods": [],
+        "detail": "A bit overwhelmed with pending tasks."
+      },
+      {
+        "date": "2025-03-18",
+        "mood_id": 4,
+        "initialMoods": ["Surprised", "Proud", "Grateful", "Happy", "Satisfied"],
+        "detail": "Didn't feel like doing anything today."
+      },
+      {
+        "date": "2025-03-20",
+        "mood_id": 5,
+        "initialMoods": [],
+        "detail": "feeling frustrated."
+      },      
+      {
+        "date": "2025-03-22",
+        "mood_id": 4,
+        "initialMoods": ["Happy", "Satisfied"],
+        "detail": "Missed a deadline and feeling frustrated."
+      },
+      {
+        "date": "2025-03-23",
+        "mood_id": 3,
+        "initialMoods": [],
+        "detail": "Feeling a bit under the weather today."
+      },
+      {
+        "date": "2025-03-24",
+        "mood_id": 2,
+        "initialMoods": [],
+        "detail": "Had a disagreement with a close friend."
+      },
+      {
+        "date": "2025-03-25",
+        "mood_id": 1,
+        "initialMoods": [],
+        "detail": "Struggling with motivation to work on projects."
+      },
+      {
+        "date": "2025-03-26",
+        "mood_id": 2,
+        "initialMoods": [],
+        "detail": "Woke up feeling anxious for no reason."
+      },
+      {
+        "date": "2025-03-27",
+        "mood_id": 3,
+        "initialMoods": [],
+        "detail": "Had a tough day dealing with personal responsibilities."
+      },
+      {
+        "date": "2025-03-29",
+        "mood_id": 4,
+        "initialMoods": ["Surprised", "Proud", "Grateful", "Happy", "Satisfied"],
+        "detail": "Just one of those days where nothing feels right."
+      }
+    ]
+  }
+]
+
+//
+// GET:  GetHistory(user_id) - return the above document (user name and history)
+// POST: AddHistory(user_id, history)
+//  
+//  history:
+//    {
+//      "date": "2025-03-02",
+//      "mood_id": 4,
+//      "initialMoods": ["Happy", "Satisfied"],
+//      "detail": "Today I am happy and satisfied with my life, because I would able to do somethings"
+//    }
+//

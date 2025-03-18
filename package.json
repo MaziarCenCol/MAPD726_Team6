@@ -1,0 +1,28 @@
+{
+  "name": "mood",
+  "license": "0BSD",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@react-navigation/stack": "^7.1.1",
+    "axios": "^1.8.3",
+    "date-fns": "^4.1.0",
+    "expo": "~52.0.35",
+    "expo-status-bar": "~2.0.1",
+    "react": "18.3.1",
+    "react-native": "0.76.7",
+    "react-native-calendars": "^1.1310.0",
+    "react-native-chart-kit": "^6.12.0",
+    "react-native-svg": "^15.11.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "private": true
+}

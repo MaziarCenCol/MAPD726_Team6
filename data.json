@@ -1,0 +1,90 @@
+
+// user
+[
+    {
+    "_id": 1,
+    "firstname": "John",
+    "lastname": "Doe",
+    "email": "john.doe@email.com",
+    "phone": "+1234567890",
+    "address": "123 Street, City, Country"
+  }
+]
+
+// mood
+[
+    { "_id": 1, "icon": "frown", "label": "Poor" },
+    { "_id": 2, "icon": "meh", "label": "Not Good" },
+    { "_id": 3, "icon": "meh-blank", "label": "Neutral" },
+    { "_id": 4, "icon": "smile", "label": "Good" },
+    { "_id": 5, "icon": "grin", "label": "Amazing" }
+]
+
+// moodEmotion
+[
+    {
+      "_id": 1,
+      "mood": "Poor",
+      "emotions": []
+    },
+    {
+      "_id": 2,
+      "mood": "Not Good",
+      "emotions": []
+    },
+    {
+      "_id": 3,
+      "mood": "Neutral",
+      "emotions": []
+    },
+    {
+        "_id": 4,
+        "mood": "Good",
+        "emotions": [
+          "Fantastic", "Excited", "Confident", "Motivated", "Optimistic", 
+          "Proud", "Relieved", "Surprised", "Grateful", "Reassured",
+          "Inspired", "Relaxed", "Hopeful", "Contemplative", "Content", 
+          "Happy", "Satisfied", "Amazed"
+        ]
+      },    
+    {
+      "_id": 5,
+      "mood": "Amazing",
+      "emotions": []
+    }
+  ]
+
+  // userMood
+  [
+    {
+        "_id": 1,
+        "userId": 1, 
+        "mood": "Good",
+        "emotions": ["Confident", "Happy"],
+        "date": "2025-02-20",
+        "detail": "Had a great day at work!"
+      },
+      {
+        "_id": 2,
+        "userId": 1, 
+        "mood": "Good",
+        "emotions": ["Happy", "Satisfied", "Hopeful"],
+        "date": "2025-02-20",
+        "detail": "Had a great day at work!"
+      }      
+  ]
+
+  // APIs:
+  // Get
+  GetUser(id) // return the user record
+  GetEmotions(mood)  // return the List of emotions of the Mood
+  GetUserMoods(userId) // return the List of UserMoods of a user
+  GetUserMood(userMoodId) // return one record of userMood
+  // Post
+  AddUserMood(userMood) // add a new UserMood
+  // Update
+  UpdateUserMood(userMoodId) // update a UserMood
+  // delete
+  DeleteUserMood(id) // delete a UserMood
+
+
