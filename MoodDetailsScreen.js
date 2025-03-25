@@ -41,14 +41,14 @@ export default function MoodDetailsScreen({ route }) {
 
         <TouchableOpacity
           style={styles.submitButton}
-          onPress={() => navigation.navigate("MoodHistoryScreen")}>
+          onPress={() => navigation.navigate("HistoryGraphScreen")}>
           <Text style={styles.submitButtonText}>Submit</Text>
         </TouchableOpacity>
       </View>
 
       <TouchableOpacity
           style={styles.submitButton}
-          onPress={() => navigation.navigate("MoodHistoryScreen")}>
+          onPress={() => navigation.navigate("HistoryGraphScreen")}>
           <Text style={styles.submitButtonText}>Skip</Text>
         </TouchableOpacity>
       

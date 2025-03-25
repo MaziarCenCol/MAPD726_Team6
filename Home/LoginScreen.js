@@ -23,7 +23,7 @@ export default function LoginScreen() {
       setTimeout(() => {
         Alert.alert("Login Success", "Welcome to Wellness App");
         navigation.navigate("Home");
-      }, 2000); // 1000ms = 1 second
+      }, 1000); 
       //Alert.alert(" Login Success", "Welcome to Wellness App");
       //console.log("Login Successful:", response.data);
       //navigation.navigate("Home");

@@ -10,19 +10,23 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@react-native-community/cli": "latest",
     "@react-navigation/stack": "^7.1.1",
     "axios": "^1.8.3",
     "date-fns": "^4.1.0",
-    "expo": "~52.0.35",
     "expo-status-bar": "~2.0.1",
     "react": "18.3.1",
     "react-native": "0.76.7",
     "react-native-calendars": "^1.1310.0",
     "react-native-chart-kit": "^6.12.0",
-    "react-native-svg": "^15.11.2"
+    "react-native-sqlite-storage": "^6.0.1",
+    "react-native-svg": "^15.11.2",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@react-native-community/cli": "^18.0.0",
+    "expo": "^52.0.40"
   },
   "private": true
 }

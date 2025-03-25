@@ -1,0 +1,42 @@
+{
+    "positive_moods": [
+      { "emoji": "😊", "title": "Happy" },
+      { "emoji": "🙏", "title": "Grateful" },
+      { "emoji": "😌", "title": "Serene" },
+      { "emoji": "😴", "title": "Relaxed" },
+      { "emoji": "😏", "title": "Pride" },
+      { "emoji": "🌟", "title": "Hope" },
+      { "emoji": "😆", "title": "Amused" },
+      { "emoji": "🤩", "title": "Inspired" },
+      { "emoji": "😮", "title": "Awe" },
+      { "emoji": "❤️", "title": "Love" },
+      { "emoji": "🙂", "title": "Content" },
+      { "emoji": "😌", "title": "Relief" },
+      { "emoji": "😁", "title": "Excited" },
+      { "emoji": "🤗", "title": "Connected" },
+      { "emoji": "🥰", "title": "Affectionate" }
+    ],
+    "neutral_moods": [
+      { "emoji": "😐", "title": "Indifferent" },
+      { "emoji": "🤨", "title": "Confused" },
+      { "emoji": "😶", "title": "Numb" }
+    ],
+    "negative_moods": [
+      { "emoji": "😩", "title": "Drained" },
+      { "emoji": "😖", "title": "Disappointed" },
+      { "emoji": "😵‍💫", "title": "Overwhelmed" },
+      { "emoji": "😢", "title": "Sad" },
+      { "emoji": "😨", "title": "Scared" },
+      { "emoji": "😡", "title": "Angry" },
+      { "emoji": "🤢", "title": "Disgust" },
+      { "emoji": "😲", "title": "Surprise" },
+      { "emoji": "😳", "title": "Embarrassed" },
+      { "emoji": "😒", "title": "Envy" },
+      { "emoji": "😰", "title": "Anxious" },
+      { "emoji": "😔", "title": "Guilty" },
+      { "emoji": "😞", "title": "Shame" },
+      { "emoji": "😤", "title": "Frustrated" },
+      { "emoji": "🥺", "title": "Lonely" }
+    ]
+  }
+  

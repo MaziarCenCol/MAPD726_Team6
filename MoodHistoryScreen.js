@@ -1,3 +1,6 @@
+//
+// this screen merged into the HistoryGraphScreen.js after updating the figma mockup
+//
 import React, { useState, useEffect } from "react";
 import {
   View,

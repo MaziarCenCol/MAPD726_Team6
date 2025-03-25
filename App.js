@@ -36,7 +36,8 @@ function HomeScreen({ navigation }) {
             <TouchableOpacity
               key={mood.id}
               style={styles.moodItem}
-              onPress={() => navigation.navigate("MoodScreen", { mood })}
+              onPress={() => 
+                navigation.navigate("MoodScreen", { mood })}
             >
               <FontAwesome5 name={mood.icon} size={28} color="#gray" />
               <Text style={styles.moodLabel}>{mood.label}</Text>
@@ -47,9 +48,9 @@ function HomeScreen({ navigation }) {
         <View style={[styles.buttonContainer, { marginTop: 150 }]}>
           <TouchableOpacity
             style={styles.historyButton}
-            onPress={() => navigation.navigate("MoodHistoryScreen")}
+            onPress={() => navigation.navigate("HistoryGraphScreen")}
           >
-            <Text style={styles.buttonText}>View Mood History {">"}</Text>
+            <Text style={styles.buttonText}> View Mood History {">"}</Text>
           </TouchableOpacity>
         </View>
 
