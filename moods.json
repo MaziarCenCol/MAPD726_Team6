@@ -17,9 +17,11 @@
       { "emoji": "🥰", "title": "Affectionate" }
     ],
     "neutral_moods": [
+      { "emoji": "🌟", "title": "Hope" },
       { "emoji": "😐", "title": "Indifferent" },
       { "emoji": "🤨", "title": "Confused" },
-      { "emoji": "😶", "title": "Numb" }
+      { "emoji": "😶", "title": "Numb" },
+      { "emoji": "😢", "title": "Sad" }
     ],
     "negative_moods": [
       { "emoji": "😩", "title": "Drained" },
