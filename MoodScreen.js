@@ -1,14 +1,7 @@
 import React, { useState, useEffect } from "react";
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  StyleSheet,
-  ScrollView,
-} from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from "react-native";
 import { FontAwesome5 } from "@expo/vector-icons";
 
-// Import moods from JSON
 const moodsData = require("./moods.json");
 
 export default function MoodScreen({ route, navigation }) {
@@ -32,16 +25,14 @@ export default function MoodScreen({ route, navigation }) {
       selectedCategory = moodsData.neutral_moods;
     }
 
-    setMoodList(selectedCategory); // Set mood list with full objects
+    setMoodList(selectedCategory);
   }, [mood]);
 
-  // Toggle mood selection
   const toggleMoodSelection = (mood) => {
-    setSelectedMoods(
-      (prevSelected) =>
-        prevSelected.includes(mood)
-          ? prevSelected.filter((item) => item !== mood) // Remove if already selected
-          : [...prevSelected, mood] // Add if not selected
+    setSelectedMoods((prevSelected) =>
+      prevSelected.includes(mood)
+        ? prevSelected.filter((item) => item !== mood)
+        : [...prevSelected, mood]
     );
   };
 
@@ -52,43 +43,34 @@ export default function MoodScreen({ route, navigation }) {
         <Text style={styles.title}>{mood.label}</Text>
 
         <View style={styles.bigBox}>
-          <Text style={styles.heading}>
-            Which emotions resonate with you right now?
-          </Text>
-          <Text style={styles.subheading}>
-            Choose the reasons that reflect your emotions
-          </Text>
+          <Text style={styles.heading}>Which emotions resonate with you right now?</Text>
+          <Text style={styles.subheading}>Choose the reasons that reflect your emotions</Text>
 
           <View style={styles.moodGrid}>
-            {moodList.map((item, index) => (
+            {(showMore ? moodList : moodList.slice(0, 12)).map((item, index) => (
               <TouchableOpacity
                 key={index}
-                style={[
-                  styles.moodButton,
-                  selectedMoods.includes(item.title) &&
-                    styles.moodButtonSelected, // Apply selected style
-                ]}
-                onPress={() => toggleMoodSelection(item.title)} // Select by title
+                style={[styles.moodButton, selectedMoods.includes(item.title) && styles.moodButtonSelected]}
+                onPress={() => toggleMoodSelection(item.title)}
               >
-                <Text style={styles.moodButtonText}>
-                  {item.emoji}
-                  {"\n"}
-                  {item.title}
-                </Text>
+                <Text style={styles.moodButtonText}>{item.emoji}{"\n"}{item.title}</Text>
               </TouchableOpacity>
             ))}
           </View>
 
+          {moodList.length > 12 && (
+            <TouchableOpacity onPress={() => setShowMore(!showMore)}>
+              <Text style={styles.moreText}>{showMore ? "Show Less" : "More..."}</Text>
+            </TouchableOpacity>
+          )}
+
           <TouchableOpacity
             style={styles.continueButton}
-            onPress={() =>
-              navigation.navigate("MoodDetailsScreen", { selectedMoods })
-            }
+            onPress={() => navigation.navigate("MoodDetailsScreen", { selectedMoods })}
           >
-            <Text style={styles.continueButtonText}>    Continue    </Text>
+            <Text style={styles.continueButtonText}>Continue</Text>
           </TouchableOpacity>
         </View>
-
       </View>
     </ScrollView>
   );
@@ -100,7 +82,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#d9d9d9",
     justifyContent: "flex-start",
     alignItems: "center",
-    paddingTop: 20, 
+    paddingTop: 20,
   },
   bigBox: {
     backgroundColor: "#f2f2f2",
@@ -131,15 +113,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   moodButtonSelected: {
-    backgroundColor: "#97ba8d", // Green for selected moods
+    backgroundColor: "#97ba8d",
   },
   moodButtonText: {
     color: "black",
     fontSize: 16,
     textAlign: "center",
-  },
-  moodButtonTextSelected: {
-    color: "white", // Change text color for selected moods
   },
   continueButton: {
     backgroundColor: "#d9d9d9",
@@ -163,5 +142,10 @@ const styles = StyleSheet.create({
     fontSize: 14,
     textAlign: "left",
     marginBottom: 15,
+  },
+  moreText: {
+    fontSize: 16,
+    color: "#007BFF",
+    marginTop: 10,
   },
 });
